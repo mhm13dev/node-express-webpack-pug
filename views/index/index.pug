@@ -2,12 +2,15 @@ doctype html
 html(lang='en')
     head
         meta(charset='utf-8')
+        link(href="https://fonts.googleapis.com/css2?family=Nunito&display=swap", rel="stylesheet")
         each style in assets.css
             link(rel="stylesheet", href=`client/${style}`)
-        title Mubashir
+        title NodeJS, Express, Webpack and Pug(view engine)
     body
-        h1 Hello
-        img(src=`client/${assets.images["mubashir-logoPNG"]}`, alt="Mubashir")
+        .content
+            h1.title Boilerplate Project For NodeJS, Express, Webpack and Pug(view engine) 
+            img(class="img", src=`client/${assets.images["nodejsSVG"]}`, alt="NodeJS Logo ")
+            a(href="/info", class="info") More Info
 
         each jsFile in assets.js
             script(src=`client/${jsFile}`)

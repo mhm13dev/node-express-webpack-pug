@@ -29,14 +29,17 @@ app.use(
   })
 );
 
-app.get('/', (req, res) => {
+app.get('/info', (req, res) => {
   res.status(200).json({
     status: 'success',
     name: 'Mubahsir Hassan',
+    info:
+      'This is a boilerplate project for NodeJS, Express, Webpack and Pug(view engine).',
+    routes: ['/home', '/static/nodejs.3dc364b8e9beb3561620274aea4f0844.svg'],
   });
 });
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
   res.render('index/index', {
     // This is must for injecting client side resources like js files, icons, css files etc
     assets: GetFiles.files.index.assets,

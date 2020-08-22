@@ -2,9 +2,9 @@
 import _ from '../js/index/something';
 
 // Files
-require('../images/mubashir-logo.png');
+require('../images/nodejs.svg');
 require('../scss/index/index.scss');
 
-console.log(_);
+console.log('index page');
 
-console.log('index page and something else');
+export default _;

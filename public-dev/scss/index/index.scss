@@ -1,5 +1,40 @@
-$color: #b9b9b9;
+$color: #fffd74;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
 
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
 body {
-	background-color: $color;
+  background-color: $color;
+  min-height: 100vh;
+  color: #000;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.content {
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+
+  .title {
+    font-size: 3rem;
+  }
+  .info {
+    text-decoration: underline;
+    color: rgb(255, 130, 130);
+    font-size: 2.2rem;
+  }
 }

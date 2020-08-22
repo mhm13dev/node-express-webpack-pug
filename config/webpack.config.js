@@ -99,11 +99,8 @@ module.exports = (env) => {
     mode,
     entry,
     output,
-
     optimization,
-
     plugins,
-
     module,
   };
 
