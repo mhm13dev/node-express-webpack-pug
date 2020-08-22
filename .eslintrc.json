@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true // TODO: true if you are using node
+  },
+
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:node/recommended" // TODO: Use if you are using node
+  ],
+  "plugins": ["prettier"],
+
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "prettier/prettier": "warn",
+
+    "node/no-unsupported-features/es-syntax": "off"
+  }
+}

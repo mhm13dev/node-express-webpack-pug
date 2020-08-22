@@ -1,0 +1,13 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        each style in assets.css
+            link(rel="stylesheet", href=`client/${style}`)
+        title Mubashir
+    body
+        h1 Hello
+        img(src=`client/${assets.images["mubashir-logoPNG"]}`, alt="Mubashir")
+
+        each jsFile in assets.js
+            script(src=`client/${jsFile}`)
